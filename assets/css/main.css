@@ -1,27 +1,38 @@
-html,body {
-    height: 100%;
-}
-
 body {
     font-family: 'Roboto', sans-serif !important;
     font-weight: 500;
 }
 
 .pl-10 {
-    padding-left: 10%;
-}
-
-.mt-10 {
-    margin-top: 100px;
+    padding-left: 16%;
 }
 
 .pt-10 {
     padding-top: 100px;
 }
 
+.mt-10 {
+    margin-top: 100px;
+}
+
+.mb-10 {
+    margin-bottom: 100px;
+}
+
+.mt-8 {
+    margin-top: 80px;
+}
+
+.mb-8 {
+    margin-bottom: 80px;
+}
+
+
 /* --------------------------------- */
 
 /* Header */
+
+/* --------------------------------- */
 
 .header-container {
     display: flex;
@@ -38,9 +49,12 @@ body {
 
     background-color: #FFF7E5;
 
-    border-radius: 50px;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
 
-    box-shadow: rgba(100, 100, 111, 0.1) 0px 0px 30px 0px;
+    box-shadow: rgba(100, 100, 111, 0.15) 0px 0px 30px 0px;
 
     background-image: url("../images/header-img-3.png");
     background-size: contain;
@@ -48,8 +62,11 @@ body {
     background-position: 120%;
 }
 
+/* --------------------------------- */
+
 /* Navbar */
 
+/* --------------------------------- */
 .header .logo {
     width: 260px;
     height: auto;
@@ -126,9 +143,15 @@ body {
     box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 15px 0px;
 }
 
+/* --------------------------------- */
+
 /* Navbar - End */
 
+/* --------------------------------- */
+
 /* Content Area */
+
+/* --------------------------------- */
 
 .header h1 {
     font-size: 35pt;
@@ -165,8 +188,10 @@ body {
 }
 
 .header .explore-menu-btn .header-arrow {
-    width: 25px;
-    height: 25px;
+    width: 28px;
+    height: 28px;
+
+    font-size: 12px;
 
     border: 1px solid #fff;
     border-radius: 50%;
@@ -215,7 +240,15 @@ body {
     box-shadow: rgba(100, 100, 111, 0.25) 0px 2px 35px 0px;
 }
 
+/* --------------------------------- */
+
+/* Content Area - End */
+
+/* --------------------------------- */
+
 /* Animation Area */
+
+/* --------------------------------- */
 
 @keyframes sushi-fly {
     0% {
@@ -231,7 +264,7 @@ body {
     }
 }
 
-@keyframes woman-fly {
+@keyframes fly {
     0% {
         transform: translateY(0px);
     }
@@ -246,8 +279,6 @@ body {
 }
 
 .sushi-img {
-
-    z-index: 0;
 
     position: absolute;
 
@@ -266,8 +297,6 @@ body {
 
 .woman-img {
 
-    z-index: 0;
-
     position: absolute;
 
     height: 90vh;
@@ -278,13 +307,84 @@ body {
     background-repeat: no-repeat;
     background-position: right;
 
-    animation: 3s ease-in-out 0.33s infinite normal none running woman-fly;
+    animation: 3s ease-in-out 0.33s infinite normal none running fly;
 }
+
+/* --------------------------------- */
 
 /* Animation Area - End */
 
 /* --------------------------------- */
 
 /* Header - End */
+
+/* --------------------------------- */
+
+/* Card Area */
+
+/* --------------------------------- */
+
+.card {
+    width: 300px;
+    height: 350px;
+
+    margin: 0 auto;
+
+    box-shadow: rgba(100, 100, 111, 0.15) 0px 0px 30px 0px;
+    
+    border-radius: 20px;
+    border: none;
+
+    cursor: pointer;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+
+    transition: 300ms all;
+}
+
+.card span {
+    font-size: 20px;
+}
+
+.card:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 10px 40px 0px;
+}
+
+.card:hover.card img {
+    animation: 2s ease-in-out 0.2s infinite normal none running fly;
+
+}
+
+/* --------------------------------- */
+
+/* Card Area - End */
+
+/* --------------------------------- */
+
+/* General Media Queries */
+
+@media screen and (max-width: 768px) {
+
+    /* Header */
+
+    .header-content h1 {
+        font-size: 30px !important;
+    }
+
+    .header-content .explore-menu-btn {
+        width: 150px !important;
+        height: 35px !important;
+    }
+
+    /* Card Area */
+    .card-area h1 {
+        font-size: 28px !important;
+    }
+
+}
 
 /* --------------------------------- */
