@@ -1,0 +1,290 @@
+html,body {
+    height: 100%;
+}
+
+body {
+    font-family: 'Roboto', sans-serif !important;
+    font-weight: 500;
+}
+
+.pl-10 {
+    padding-left: 10%;
+}
+
+.mt-10 {
+    margin-top: 100px;
+}
+
+.pt-10 {
+    padding-top: 100px;
+}
+
+/* --------------------------------- */
+
+/* Header */
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 100vh;
+}
+
+.header {
+
+    height: 90vh;
+    width: 90vw;
+
+    background-color: #FFF7E5;
+
+    border-radius: 50px;
+
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 0px 30px 0px;
+
+    background-image: url("../images/header-img-3.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 120%;
+}
+
+/* Navbar */
+
+.header .logo {
+    width: 260px;
+    height: auto;
+
+    transition: 300ms all;
+}
+
+.header .logo:hover {
+    transform: scale(1.1);
+}
+
+.bg-white {
+    background-color: #fff !important;
+}
+
+.navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 20px;
+}
+
+@media screen and (max-width: 1024px) {
+    .navbar-nav {
+        flex-direction: row;
+    }
+}
+
+.navbar-light .navbar-nav .active>.nav-link, .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .nav-link.show, .navbar-light .navbar-nav .show>.nav-link {
+    color: #000 !important;
+}
+
+.nav-item a {
+    transition: 300ms all;
+}
+
+.nav-item a:hover {
+    color: #000 !important;
+}
+
+.badge {
+    width: 25px;
+    height: 25px;
+    border-radius: 50% !important;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    right: -6px;
+    top: -6px;
+
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 15px 0px;
+}
+
+.basket {
+    width: 50px;
+    height: 50px;
+    
+    background-color: #FEBD2E;
+    color: #000 !important; 
+
+    border-radius: 16px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 300ms all;
+}
+
+.basket:hover {
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 15px 0px;
+}
+
+/* Navbar - End */
+
+/* Content Area */
+
+.header h1 {
+    font-size: 35pt;
+    font-weight: bold;
+}
+
+.header .explore-menu-btn {
+    width: 200px;
+    height: 50px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    gap: 10px;
+
+    background-color: #232323;
+    color: #fff;
+
+    font-size: 15px;
+    font-weight: 400;
+
+    border-radius: 50px;
+
+    transition: 300ms all;
+
+    text-decoration: none;
+}
+
+.header .explore-menu-btn:hover {
+    color: #FEBD2E;
+
+    box-shadow: rgba(100, 100, 111, 0.6) 0px 0px 20px 0px;
+}
+
+.header .explore-menu-btn .header-arrow {
+    width: 25px;
+    height: 25px;
+
+    border: 1px solid #fff;
+    border-radius: 50%;
+
+    background-color: #FEBD2E;
+    color: black;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.header-social-links {
+    list-style-type: none;
+
+    display: flex;
+    align-items: center;
+
+    gap: 12px;
+
+    padding: 0;
+
+}
+
+.header-social-links .social-link a {
+    height: 40px;
+    width: 40px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: #fff;
+    color: #000;
+    
+    border-radius: 50%;
+
+    font-size: 16px;
+
+    box-shadow: rgba(100, 100, 111, 0.1) 0px 2px 25px 0px;
+
+    transition: 300ms all;
+}
+
+.header-social-links .social-link a:hover {
+    box-shadow: rgba(100, 100, 111, 0.25) 0px 2px 35px 0px;
+}
+
+/* Animation Area */
+
+@keyframes sushi-fly {
+    0% {
+        transform: translate(0px, 0px);
+    }
+    
+    50% {
+        transform: translate(5px, 10px);
+    }
+
+    100% {
+        transform: translate(0px, 0px);
+    }
+}
+
+@keyframes woman-fly {
+    0% {
+        transform: translateY(0px);
+    }
+    
+    50% {
+        transform: translateY(-10px);
+    }
+
+    100% {
+        transform: translateY(0px);
+    }
+}
+
+.sushi-img {
+
+    z-index: 0;
+
+    position: absolute;
+
+    top: -5px;
+
+    height: 90vh;
+    width: 90vw;
+
+    background-image: url("../images/sushi.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    animation: 3s ease-in-out 0.33s infinite normal none running sushi-fly;
+}
+
+.woman-img {
+
+    z-index: 0;
+
+    position: absolute;
+
+    height: 90vh;
+    width: 90vw;
+
+    background-image: url("../images/just-woman.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: right;
+
+    animation: 3s ease-in-out 0.33s infinite normal none running woman-fly;
+}
+
+/* Animation Area - End */
+
+/* --------------------------------- */
+
+/* Header - End */
+
+/* --------------------------------- */
