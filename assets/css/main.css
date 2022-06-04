@@ -1,14 +1,32 @@
-body {
+*, body {
     font-family: 'Roboto', sans-serif !important;
     font-weight: 500;
+
+    scroll-behavior: smooth;
 }
 
 .pl-10 {
-    padding-left: 16%;
+    padding-left: 10%;
 }
 
 .pt-10 {
     padding-top: 100px;
+}
+
+.mt-30 {
+    margin-top: 300px;
+}
+
+.mt-20 {
+    margin-top: 200px;
+}
+
+.mt-18 {
+    margin-top: 180px;
+}
+
+.mt-15 {
+    margin-top: 150px;
 }
 
 .mt-10 {
@@ -83,10 +101,6 @@ body {
 }
 
 .navbar-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
     gap: 20px;
 }
 
@@ -324,6 +338,11 @@ body {
 
 /* --------------------------------- */
 
+.card-area h1 {
+    font-size: 35pt;
+    font-weight: bold;
+}
+
 .card {
     width: 300px;
     height: 350px;
@@ -348,6 +367,7 @@ body {
 
 .card span {
     font-size: 20px;
+    font-weight: bold;
 }
 
 .card:hover {
@@ -365,7 +385,129 @@ body {
 
 /* --------------------------------- */
 
+/* What People Say Box */
+
+/* --------------------------------- */
+
+.what-people-say .img-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.what-people-say .img-col img {
+    margin-top: -200px;
+
+    width: 180%;
+    height: auto;
+}
+
+.what-people-say h1 {
+    font-size: 35pt;
+    font-weight: bold;
+}
+
+.what-people-say .customer-comment {
+    font-size: 11pt;
+    font-weight: 400;
+
+    line-height: 2rem;
+}
+
+.what-people-say .customer-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.what-people-say .customer-container img {
+    width: 55px;
+    height: 55px;
+    
+    border-radius: 50%;
+
+    box-shadow: rgba(100, 100, 111, 0.6) 0px 0px 20px 0px;
+}
+
+.what-people-say .customer-container .customer-details {
+    position: relative;
+
+    width: 100%;
+}
+
+.what-people-say .customer-container .customer-details .fa-quote-right {
+    position: absolute;
+
+    top: -60px;
+    right: 10px;
+    
+    color: #FFF7E5;
+
+    font-size: 80px;
+}
+
+.what-people-say .customer-container .customer-details h1 {
+    font-size: 12pt;
+    font-weight: bold;
+}
+
+.what-people-say .customer-container .customer-details span {
+    color: rgb(80, 80, 80);
+    font-size: 9pt;
+}
+
+.what-people-say .slider-arrows {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+
+    gap: 15px;
+}
+
+.what-people-say .slider-arrows a {
+    width: 40px;
+    height: 40px;
+
+    color: #000;
+
+    border-radius: 50%;
+
+    font-size: 18px;
+    
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 0px 20px 0px;
+
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: 300ms all;
+}
+
+.what-people-say .slider-arrows a:hover {
+    background-color: #FEBD2E;
+
+    box-shadow: rgba(254, 188, 46, 0.8) 0px 0px 20px 0px;
+}
+
+.what-people-say .slider-arrows a.active {
+    background-color: #FEBD2E;
+
+    box-shadow: rgba(254, 188, 46, 0.2) 0px 0px 20px 0px;
+
+    transition: 300ms all;
+}
+
+.what-people-say .slider-arrows a.active:hover {
+    box-shadow: rgba(254, 188, 46, 0.8) 0px 0px 20px 0px;
+}
+
+/* --------------------------------- */
+
 /* General Media Queries */
+
+/* --------------------------------- */
 
 @media screen and (max-width: 768px) {
 
@@ -385,6 +527,16 @@ body {
         font-size: 28px !important;
     }
 
+}
+
+@media screen and (max-width: 1024px) {
+    .what-people-say .img-col img {
+        max-width: 100%;
+    }
+
+    .what-people-say .customer-col {
+        margin-top: 100px !important;
+    }
 }
 
 /* --------------------------------- */
