@@ -17,16 +17,18 @@
     <!-- Font Awesome -->
     <link rel="stylesheet" href="./assets/css/all.min.css">
 
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <!-- Font -->
+    <link rel="stylesheet" href="./assets/css/font.css">
 
     <!-- Main CSS -->
     <link rel="stylesheet" href="./assets/css/main.css">
 </head>
 
 <body>
+
+    <a href="#" id="scroll-top">
+        <i class="fa-solid fa-chevron-up"></i>
+    </a>
 
     <div class="container-fluid header-container">
         <div class="header position-relative">
@@ -135,13 +137,14 @@
         </div>
     </div>
 
-    <div class="container what-people-say mt-30" id="customer-reviews">
+    <div id="customer-reviews"></div>
+    <div class="container what-people-say mt-30">
         <div class="row">
             <div class="col-sm-12 col-md-12 col-lg-6 img-col">
-                <img src="./assets/images/what-people-say-img.png" alt="Image">
+                <img src="./assets/images/what-people-say-img.png" alt="Image" draggable="false">
             </div>
 
-            <div class="col-sm-12 col-md-12 col-lg-6 m-sm-0 m-5 customer-col">
+            <div class="col-sm-12 col-md-12 col-lg-6 m-sm-0 m-4 customer-col">
                 <h1>What people's Say <br /> about The Food LLC.</h1>
                 <p class="customer-comment pt-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis
                     illum
@@ -151,7 +154,7 @@
                     ratione soluta porro architecto eum.
                 </p>
                 <div class="customer-container pt-4">
-                    <img src="./assets/images/yakup.jpg" alt="Customer Image">
+                    <img src="./assets/images/yakup.jpg" alt="Customer Image" draggable="false">
                     <div class="customer-details">
                         <i class="fa-solid fa-quote-right"></i>
                         <h1>Yakup Sevik</h1>
@@ -170,8 +173,95 @@
         </div>
     </div>
 
-    <footer class="footer mt-10">
+    <footer class="footer mt-20">
+        <div class="container pt-5">
+            <div class="row pb-5">
+                <div class="col-sm-12 col-md-6 col-lg-3">
+                    <img src="./assets/images/logo-rev.png" alt="The Food LLC Logo" class="footer-logo">
+                    <p class="address-details mt-4">Brentwood, 3112 Wayback Lane, New York, NY 11717</p>
+                    <div class="flex-links">
+                        <a href="#">About Us</a>
+                        <a href="#">Team</a>
+                    </div>
+                    <div class="flex-links">
+                        <a href="#">Partners</a>
+                        <a href="#">Career</a>
+                    </div>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 links-col">
+                    <h1>Categories</h1>
+                    <ul>
+                        <li><a href="#">Ramen</a></li>
+                        <li><a href="#">Sushi</a></li>
+                        <li><a href="#">Dimsum</a></li>
+                        <li><a href="#">Hot Pot</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 links-col">
+                    <h1>Useful Links</h1>
+                    <ul>
+                        <li><a href="#">Payment & Tax</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">My Account</a></li>
+                        <li><a href="#">Return Policy</a></li>
+                    </ul>
+                </div>
+                <div class="col-sm-12 col-md-6 col-lg-3 links-col">
+                    <h1>Start Connected</h1>
+                    <div class="email-container">
+                        <input type="email" placeholder="E-mail Address" />
+                        <a href="#" class="email-btn">
+                            <i class="fa-solid fa-angle-right"></i>
+                        </a>
+                    </div>
 
+                    <div class="info-container">
+                        <div class="info">
+                            <a class="icon-a">
+                                <i class="fa-solid fa-phone"></i>
+                            </a>
+                            <a href="#">Call +1(100) 695-0204</a>
+                        </div>
+                        <div class="info">
+                            <a class="icon-a">
+                                <i class="fa-solid fa-envelope"></i>
+                            </a>
+                            <a href="#">support@thefood.com</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="line"></div>
+            </div>
+
+            <div class="row pt-4 pb-4 footer-bottom">
+                <p class="copyright">Copyright © 2022 The Food, LLC. All Rights Reserved.</p>
+                <ul class="footer-social-links">
+                    <li class="social-link">
+                        <a href="#">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                    </li>
+                    <li class="social-link">
+                        <a href="#">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </li>
+                    <li class="social-link">
+                        <a href="#">
+                            <i class="fa-brands fa-google-plus-g"></i>
+                        </a>
+                    </li>
+                    <li class="social-link">
+                        <a href="#">
+                            <i class="fa-brands fa-youtube"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </footer>
 
     <!-- jQuery -->
