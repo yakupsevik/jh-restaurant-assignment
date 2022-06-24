@@ -1,22 +1,22 @@
-# jh-restaurant-assignment
+# Restaurant
 
-Johns Hopkins University - Week 3 Restaurant Assignment
+Johns Hopkins University - Restaurant Project
 
-#
+<br/>
 
 # Desktop
 
 ![Animation](./Animation.gif)
 
-#
+<br/>
 
 # Mobile
 
 ![AnimationMobile](./AnimationMobile.gif)
 
-#
+<br/>
 
-What i did use on this project;
+# Which technologies did I use in this project?
 
 - HTML5
 - CSS3
