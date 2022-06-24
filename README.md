@@ -1,6 +1,6 @@
 # Restaurant
 
-Johns Hopkins University - Restaurant Project
+Johns Hopkins University - Restaurant Project Assignment
 
 <br/>
 
